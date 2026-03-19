@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Logo from './Logo'
 
 interface FooterDict {
   slogan: string
@@ -37,7 +38,7 @@ const navLinks = [
 const socialLinks = [
   {
     label: 'Instagram',
-    href: 'https://instagram.com/avdigital',
+    href: 'https://www.instagram.com/alvarovalle93/',
     icon: (
       <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <rect x="2" y="2" width="20" height="20" rx="5" />
@@ -59,7 +60,7 @@ const socialLinks = [
   },
   {
     label: 'GitHub',
-    href: 'https://github.com/avdigital',
+    href: 'https://github.com/AlvaroValle-FS93',
     icon: (
       <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
         <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
@@ -68,7 +69,7 @@ const socialLinks = [
   },
   {
     label: 'Email',
-    href: 'mailto:hola@avdigital.es',
+    href: 'mailto:alvaro.valle.fullstack@outlook.com',
     icon: (
       <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
@@ -99,9 +100,13 @@ export default function Footer({ dict, nav, lang }: { dict: FooterDict; nav: Nav
       <div className="wrapper py-14 grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Logo + slogan */}
         <div className="flex flex-col gap-2">
-          <span className="font-mono font-bold text-[15px] text-text tracking-tight">
-            AV Digital Solutions
-          </span>
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="cursor-pointer bg-transparent border-none p-0 leading-none self-start"
+            aria-label="Ir al inicio"
+          >
+            <Logo />
+          </button>
           <span className="text-[13px] text-text-2 leading-snug">{dict.slogan}</span>
           <span className="font-mono text-[11px] text-accent mt-1">{dict.location}</span>
         </div>

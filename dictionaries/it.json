@@ -86,10 +86,11 @@
     "tag": "05 PORTFOLIO",
     "title": "Progetti recenti",
     "sub": "Una selezione degli ultimi progetti consegnati.",
+    "youtube_btn": "Guarda la demo su YouTube",
     "items": [
-      { "name": "App prenotazioni", "type": "App web · React + Node.js", "desc": "Piattaforma di prenotazione online per una catena di ristoranti con pannello di amministrazione in tempo reale.", "tag": "Web App" },
-      { "name": "E-commerce mobile", "type": "App mobile · React Native", "desc": "Negozio online multipiattaforma con gateway di pagamento integrato e gestione degli ordini.", "tag": "Mobile" },
-      { "name": "Dashboard analitica", "type": "App web · Next.js", "desc": "Pannello di controllo con grafici in tempo reale, esportazione di report e gestione utenti.", "tag": "Dashboard" }
+      { "name": "CircularScore", "type": "App web · React · Node.js", "desc": "App per eseguire test SDG e misurare i tuoi livelli di sostenibilità rispetto ad altre aziende.", "tag": "Web App", "badge": "In fase di lancio" },
+      { "name": "Let's EuropApp", "type": "Software · Django · React", "desc": "App per prepararsi ai concorsi dell'Unione Europea con test interattivi e monitoraggio dei progressi.", "tag": "Software", "badge": "In Progress", "badgeStyle": "progress" },
+      { "name": "RollStats", "type": "App web · Next.js", "desc": "App per analizzare i tuoi combattimenti di jiu jitsu tramite analisi dei dati e visualizzazione delle statistiche.", "tag": "Dashboard", "badge": "In Progress", "badgeStyle": "progress" }
     ]
   },
   "contact": {
@@ -130,6 +131,7 @@
       "project_max": "Il messaggio è troppo lungo",
       "accept_required": "Devi accettare la privacy policy per continuare",
     "server_error": "Qualcosa è andato storto, riprova",
+    "rate_limit": "Hai già inviato un messaggio di recente. Attendi {min} minuti prima di riprovare.",
       "success": "Messaggio inviato! Ti rispondo entro 24 ore"
     }
   },
@@ -149,9 +151,9 @@
     "s2_title": "Utilizzo dei dati",
     "s2_body": "I tuoi dati vengono utilizzati esclusivamente per risponderti e gestire il rapporto commerciale. Non li condividiamo con terzi.",
     "s3_title": "I tuoi diritti",
-    "s3_body": "Puoi richiedere l'accesso, la rettifica o la cancellazione dei tuoi dati in qualsiasi momento scrivendo a hola@avdigital.es.",
+    "s3_body": "Puoi richiedere l'accesso, la rettifica o la cancellazione dei tuoi dati in qualsiasi momento scrivendo a alvaro.valle.fullstack@outlook.com.",
     "s4_title": "Responsabile",
-    "s4_body": "Álvaro Valle · hola@avdigital.es · Valencia, Spagna"
+    "s4_body": "Álvaro Valle · alvaro.valle.fullstack@outlook.com · Valencia, Spagna"
   },
   "cookies": {
     "title": "Cookie policy",
@@ -161,7 +163,7 @@
     "s2_title": "Come disattivarli",
     "s2_body": "Puoi eliminare i cookie dalle impostazioni del tuo browser.",
     "s3_title": "Contatto",
-    "s3_body": "Per qualsiasi domanda sui cookie, scrivici a hola@avdigital.es."
+    "s3_body": "Per qualsiasi domanda sui cookie, scrivici a alvaro.valle.fullstack@outlook.com."
   },
   "terms": {
     "title": "Termini di utilizzo",

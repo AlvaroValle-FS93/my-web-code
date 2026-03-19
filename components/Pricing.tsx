@@ -49,7 +49,7 @@ export default function Pricing({ dict }: { dict: PricingDict }) {
             <ul className="flex flex-col gap-2">
               {plan.features.map((f, i) => (
                 <li key={i} className="text-[12px] text-text-2 flex gap-2">
-                  <span className="text-accent flex-shrink-0">—</span>
+                  <span className="flex-shrink-0" style={{ color: '#34d058' }}>✓</span>
                   {f}
                 </li>
               ))}

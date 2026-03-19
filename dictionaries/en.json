@@ -86,10 +86,11 @@
     "tag": "05 PORTFOLIO",
     "title": "Recent projects",
     "sub": "A selection of the latest delivered projects.",
+    "youtube_btn": "Watch demo on YouTube",
     "items": [
-      { "name": "Booking app", "type": "Web app · React + Node.js", "desc": "Online booking platform for a restaurant chain with real-time admin panel.", "tag": "Web App" },
-      { "name": "Mobile e-commerce", "type": "Mobile app · React Native", "desc": "Cross-platform online store with integrated payment gateway and order management.", "tag": "Mobile" },
-      { "name": "Analytics dashboard", "type": "Web app · Next.js", "desc": "Real-time control panel with charts, report export and user management.", "tag": "Dashboard" }
+      { "name": "CircularScore", "type": "Web app · React · Node.js", "desc": "App to run SDG tests and benchmark your sustainability levels against other companies.", "tag": "Web App", "badge": "Going live" },
+      { "name": "Let's EuropApp", "type": "Software · Django · React", "desc": "App to prepare for European Union competitive exams with interactive tests and progress tracking.", "tag": "Software", "badge": "In Progress", "badgeStyle": "progress" },
+      { "name": "RollStats", "type": "Web app · Next.js", "desc": "App to analyse your jiu jitsu rolls through data analysis and statistics visualisation.", "tag": "Dashboard", "badge": "In Progress", "badgeStyle": "progress" }
     ]
   },
   "contact": {
@@ -130,6 +131,7 @@
       "project_max": "Message is too long",
       "accept_required": "You must accept the privacy policy to continue",
     "server_error": "Something went wrong, please try again",
+    "rate_limit": "You already sent a message recently. Please wait {min} minutes before trying again.",
       "success": "Message sent! I'll reply within 24 hours"
     }
   },
@@ -149,9 +151,9 @@
     "s2_title": "How we use your data",
     "s2_body": "Your data is used solely to reply to you and manage the business relationship. We do not share it with third parties or use it for advertising.",
     "s3_title": "Your rights",
-    "s3_body": "You can request access, correction or deletion of your data at any time by writing to hola@avdigital.es.",
+    "s3_body": "You can request access, correction or deletion of your data at any time by writing to alvaro.valle.fullstack@outlook.com.",
     "s4_title": "Data controller",
-    "s4_body": "Álvaro Valle · hola@avdigital.es · Valencia, Spain"
+    "s4_body": "Álvaro Valle · alvaro.valle.fullstack@outlook.com · Valencia, Spain"
   },
   "cookies": {
     "title": "Cookie policy",
@@ -161,7 +163,7 @@
     "s2_title": "How to disable them",
     "s2_body": "You can clear cookies from your browser settings. Please note that some basic website features may be affected.",
     "s3_title": "Contact",
-    "s3_body": "For any questions about cookies, write to us at hola@avdigital.es."
+    "s3_body": "For any questions about cookies, write to us at alvaro.valle.fullstack@outlook.com."
   },
   "terms": {
     "title": "Terms of use",

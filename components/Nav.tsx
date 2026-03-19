@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { useRouter, usePathname } from 'next/navigation'
 import { useTheme } from './ThemeProvider'
+import Logo from './Logo'
 
 const LANGS = ['es', 'en', 'fr', 'it'] as const
 type LangCode = (typeof LANGS)[number]
@@ -40,9 +41,13 @@ export default function Nav({ dict, lang }: { dict: NavDict; lang: string }) {
       <div className="wrapper flex items-center justify-between py-5">
 
         {/* Logo */}
-        <div className="font-mono text-sm text-accent tracking-widest">
-          AV<span className="text-text-2">.</span>digital
-        </div>
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="cursor-pointer bg-transparent border-none p-0 leading-none"
+          aria-label="Ir al inicio"
+        >
+          <Logo />
+        </button>
 
         {/* Desktop menu */}
         <div className="hidden md:flex items-center gap-7">

@@ -24,7 +24,7 @@ export default async function Page({
     name: 'AV Digital Solutions',
     url: `https://avdigital.es/${lang}`,
     description: dict.hero.sub,
-    email: 'hola@avdigital.es',
+    email: 'alvaro.valle.fullstack@outlook.com',
     telephone: '+34 600 000 000',
     priceRange: '€€',
     address: {

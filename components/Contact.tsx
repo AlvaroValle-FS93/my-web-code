@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { contactSchema, type ContactFormErrors, type ServiceId } from '@/lib/schemas/contact'
 
 interface ContactDict {
@@ -81,6 +81,32 @@ export default function Contact({ dict }: { dict: ContactDict }) {
   const [acceptComms, setAcceptComms] = useState(false)
   const [errors, setErrors] = useState<ContactFormErrors>({})
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
+  const [cooldownMins, setCooldownMins] = useState(0)
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null)
+
+  const COOLDOWN_MS = 10 * 60 * 1000
+  const LS_KEY = 'contact_last_submit'
+
+  useEffect(() => {
+    const stored = localStorage.getItem(LS_KEY)
+    if (stored) {
+      const elapsed = Date.now() - Number(stored)
+      if (elapsed < COOLDOWN_MS) startCooldown(COOLDOWN_MS - elapsed)
+    }
+  }, [])
+
+  function startCooldown(remainingMs: number) {
+    setCooldownMins(Math.ceil(remainingMs / 60000))
+    timerRef.current = setInterval(() => {
+      setCooldownMins((prev) => {
+        if (prev <= 1) {
+          clearInterval(timerRef.current!)
+          return 0
+        }
+        return prev - 1
+      })
+    }, 60000)
+  }
 
   const t = (key: string) => dict.form_errors[key] ?? key
 
@@ -119,6 +145,13 @@ export default function Contact({ dict }: { dict: ContactDict }) {
 
       if (!res.ok) {
         const data = await res.json()
+        if (res.status === 429) {
+          setStatus('error')
+          const remaining = COOLDOWN_MS
+          localStorage.setItem(LS_KEY, String(Date.now() - (COOLDOWN_MS - remaining)))
+          startCooldown(remaining)
+          return
+        }
         if (data.errors) {
           setErrors({
             name: data.errors.name?.[0] ? t(data.errors.name[0]) : undefined,
@@ -130,6 +163,8 @@ export default function Contact({ dict }: { dict: ContactDict }) {
         return
       }
 
+      localStorage.setItem(LS_KEY, String(Date.now()))
+      startCooldown(COOLDOWN_MS)
       setStatus('success')
       setName('')
       setEmail('')
@@ -159,7 +194,7 @@ export default function Contact({ dict }: { dict: ContactDict }) {
             {[
               {
                 label: dict.email_label,
-                val: 'hola@avdigital.es',
+                val: 'alvaro.valle.fullstack@outlook.com',
                 icon: (
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
@@ -235,6 +270,16 @@ export default function Contact({ dict }: { dict: ContactDict }) {
                     <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
                   </svg>
                   Telegram
+                </a>
+                <a
+                  href="mailto:alvaro.valle.fullstack@outlook.com"
+                  className="inline-flex items-center gap-2 font-mono text-[12px] font-bold px-4 py-2 rounded-full transition-all duration-200 hover:-translate-y-px hover:opacity-90 bg-accent-dim border border-border-mid text-accent"
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                  Email
                 </a>
               </div>
             </div>
@@ -358,12 +403,17 @@ export default function Contact({ dict }: { dict: ContactDict }) {
             <div className="flex items-center gap-4 flex-wrap">
               <button
                 type="submit"
-                disabled={status === 'sending'}
+                disabled={status === 'sending' || cooldownMins > 0}
                 className="btn-primary self-start disabled:opacity-50 disabled:cursor-not-allowed disabled:translate-y-0"
               >
                 {status === 'sending' ? dict.form.sending : dict.form.send}
               </button>
-              {status === 'error' && (
+              {cooldownMins > 0 && (
+                <span className="font-mono text-[11px] text-text-2">
+                  {t('rate_limit').replace('{min}', String(cooldownMins))}
+                </span>
+              )}
+              {status === 'error' && cooldownMins === 0 && (
                 <span className="font-mono text-[11px] text-red-500">{t('server_error')}</span>
               )}
             </div>
