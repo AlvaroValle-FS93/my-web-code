@@ -1,26 +1,118 @@
 @import "tailwindcss";
 
+
+/* ── Dark mode (default) ────────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #080c10;
+  --bg-2: #0d1117;
+  --bg-3: #131920;
+  --bg-surface: #151d27;
+  --accent: #a855f7;
+  --accent-2: #818cf8;
+  --accent-dim: rgba(168, 85, 247, 0.08);
+  --border-dim: rgba(168, 85, 247, 0.15);
+  --border-mid: rgba(168, 85, 247, 0.35);
+  --text: #e8edf2;
+  --text-2: #7a8a9a;
+  --text-3: #3d4f5f;
 }
 
+/* ── Light mode ─────────────────────────────────────────── */
+html.light {
+  --bg: #f9fafb;
+  --bg-2: #f3f4f6;
+  --bg-3: #ede9fe;
+  --bg-surface: #e5dffe;
+  --accent: #7c3aed;
+  --accent-2: #6366f1;
+  --accent-dim: rgba(124, 58, 237, 0.08);
+  --border-dim: rgba(124, 58, 237, 0.15);
+  --border-mid: rgba(124, 58, 237, 0.35);
+  --text: #111827;
+  --text-2: #6b7280;
+  --text-3: #9ca3af;
+}
+
+/* ── Tailwind 4 design tokens ───────────────────────────── */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-family-sans: var(--font-syne), sans-serif;
+  --font-family-mono: var(--font-space-mono), monospace;
+
+  --color-bg: var(--bg);
+  --color-bg-2: var(--bg-2);
+  --color-bg-3: var(--bg-3);
+  --color-bg-surface: var(--bg-surface);
+  --color-accent: var(--accent);
+  --color-accent-2: var(--accent-2);
+  --color-accent-dim: var(--accent-dim);
+  --color-border-dim: var(--border-dim);
+  --color-border-mid: var(--border-mid);
+  --color-text: var(--text);
+  --color-text-2: var(--text-2);
+  --color-text-3: var(--text-3);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+  }
+  section[id] {
+    scroll-margin-top: 72px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .btn-primary {
+    @apply font-mono text-[13px] px-7 py-3.5 bg-accent text-black font-bold tracking-widest rounded-sm transition-all duration-200 hover:opacity-90 hover:-translate-y-px cursor-pointer border-none;
+  }
+  .btn-secondary {
+    @apply font-mono text-[13px] px-7 py-3.5 bg-transparent text-accent border border-border-mid tracking-widest rounded-sm transition-all duration-200 hover:bg-accent-dim cursor-pointer;
+  }
+  .section-tag {
+    @apply font-mono text-[11px] text-accent tracking-[0.12em] mb-3.5 text-center;
+  }
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-2.5 tracking-tight text-center;
+  }
+  .section-sub {
+    @apply text-[15px] text-text-2 max-w-lg leading-relaxed mb-12 text-center mx-auto;
+  }
+  .wrapper {
+    @apply w-full max-w-6xl mx-auto px-6 md:px-12 xl:px-20;
+  }
+}
+
+.btn-whatsapp {
+  background-color: #0d2318;
+  color: #34d058;
+}
+html.light .btn-whatsapp {
+  background-color: #25D366;
+  color: #fff;
+}
+
+.btn-telegram {
+  background-color: #0a1f2e;
+  color: #29b6f6;
+}
+html.light .btn-telegram {
+  background-color: #2AABEE;
+  color: #fff;
+}
+
+@keyframes blink {
+  0%, 49% { opacity: 0.8; }
+  50%, 100% { opacity: 0; }
+}
+.cursor-blink { animation: blink 1s infinite; }
+
+.hero-glow {
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.07) 0%, transparent 70%);
+}
+html.light .hero-glow {
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.07) 0%, transparent 70%);
 }

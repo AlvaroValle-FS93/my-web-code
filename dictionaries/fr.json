@@ -1,0 +1,178 @@
+{
+  "nav": {
+    "services": "Services",
+    "process": "Processus",
+    "pricing": "Tarifs",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tag": "Freelance · Valence · React · Next.js · Node.js",
+    "h1_1": "Votre app.",
+    "h1_2": "Conçue",
+    "h1_3": "et développée.",
+    "sub": "Je développe des applications web et mobiles sur mesure pour les entreprises qui veulent se digitaliser sans payer des prix d'agence. Design UI inclus.",
+    "cta1": "Parlez-moi de votre projet",
+    "cta2": "Voir les services"
+  },
+  "stats": {
+    "weeks_val": "4–6",
+    "weeks_label": "semaines · projet moyen",
+    "price_val": "à partir de 2.5k",
+    "price_label": "€ · apps fonctionnelles",
+    "contact_val": "1",
+    "contact_label": "interlocuteur · contact direct"
+  },
+  "services": {
+    "tag": "01 SERVICES",
+    "title": "Ce que je crée",
+    "sub": "Je couvre tout le cycle : design, développement et lancement. Sans coordonner plusieurs prestataires.",
+    "items": [
+      {
+        "num": "01",
+        "name": "Landing Page",
+        "desc": "Présence en ligne professionnelle qui convertit les visiteurs en clients.",
+        "price": "à partir de 500 €",
+        "features": ["Design UI personnalisé et responsive", "SEO technique complet (balises, schema, sitemap)", "Sections : hero, services, témoignages, FAQ, contact", "Chargement ultra-rapide · Core Web Vitals", "Formulaire de contact fonctionnel", "Livraison en 1–2 semaines"]
+      },
+      {
+        "num": "02",
+        "name": "Site Professionnel",
+        "desc": "Site complet avec panneau d'administration pour modifier le contenu sans développeur.",
+        "price": "à partir de 1 500 €",
+        "features": ["Tout de la Landing Page", "Panneau d'administration inclus", "Blog ou section actualités", "SEO avancé avec URLs optimisées", "Intégration Google Analytics et CRM", "Livraison en 3–4 semaines"]
+      },
+      {
+        "num": "03",
+        "name": "Site / Logiciel Sur Mesure",
+        "desc": "E-commerce, logiciel de gestion ou toute application web complexe.",
+        "price": "à partir de 2 500 €",
+        "features": ["E-commerce avec passerelle de paiement (Stripe, PayPal)", "Logiciel interne : ERP, CRM, réservations, gestion de commandes", "Authentification et rôles utilisateurs", "Base de données et API REST", "Intégrations avec systèmes externes", "Scalable et maintenable sur le long terme"]
+      },
+      {
+        "num": "04",
+        "name": "Maintenance",
+        "desc": "Support continu pour que votre site soit toujours à jour et sécurisé.",
+        "price": "à partir de 150 €/mois",
+        "features": ["Mises à jour de sécurité", "Correction de bugs", "Modifications de contenu et petites améliorations", "Support email en moins de 24h", "Rapport mensuel de performance"]
+      }
+    ]
+  },
+  "process": {
+    "tag": "02 PROCESSUS",
+    "title": "Comment nous travaillons",
+    "sub": "Sans surprises. Chaque phase a des livrables clairs et nécessite votre approbation avant de continuer.",
+    "steps": [
+      { "num": "01 —", "title": "Découverte", "desc": "Réunion pour comprendre votre entreprise, vos utilisateurs et vos objectifs. Nous définissons le périmètre et livrons un devis fixe.", "time": "1–2 semaines" },
+      { "num": "02 —", "title": "Design UI/UX", "desc": "Wireframes et prototype navigable. Vous approuvez le design avant le début du développement.", "time": "2–4 semaines" },
+      { "num": "03 —", "title": "Développement par sprints", "desc": "Itérations bihebdomadaires avec démos. Vous voyez la progression réelle à chaque livraison.", "time": "6–16 semaines" },
+      { "num": "04 —", "title": "Livraison et lancement", "desc": "Déploiement en production, documentation et formation. Le code source vous appartient dès le premier jour.", "time": "1–2 semaines" }
+    ]
+  },
+  "pricing": {
+    "tag": "03 TARIFS",
+    "title": "Transparence totale",
+    "sub": "Sans frais cachés. Les prix sont indicatifs — chaque projet a son devis fixe.",
+    "popular": "POPULAIRE",
+    "from": "à partir de",
+    "plans": [
+      { "tier": "LANDING PAGE", "price": "500", "unit": "€", "desc": "Présence en ligne qui convertit les visiteurs en clients", "featured": false, "features": ["Design UI personnalisé", "SEO technique complet", "Responsive et ultra-rapide", "Formulaire de contact", "Livraison en 1–2 semaines"] },
+      { "tier": "PROFESSIONNEL", "price": "1 500", "unit": "€", "desc": "Site complet avec panneau d'administration inclus", "featured": true, "features": ["Tout de la Landing Page", "Panneau admin · modifier sans code", "Blog ou actualités", "SEO avancé", "Analytics + CRM"] },
+      { "tier": "SUR MESURE", "price": "2 500", "unit": "€", "desc": "E-commerce, logiciel ou application web complexe", "featured": false, "features": ["Tout du Professionnel", "E-commerce · Stripe / PayPal", "Logiciel de gestion (ERP, CRM...)", "API REST + base de données", "Intégrations externes"] },
+      { "tier": "MAINTENANCE", "price": "150", "unit": "€/mois", "desc": "Votre site toujours à jour, sécurisé et opérationnel", "featured": false, "features": ["Mises à jour de sécurité", "Correction de bugs", "Modifications de contenu", "Support email 24h", "Rapport mensuel"] }
+    ]
+  },
+  "portfolio": {
+    "tag": "05 PORTFOLIO",
+    "title": "Projets récents",
+    "sub": "Une sélection des derniers projets livrés.",
+    "items": [
+      { "name": "App de réservation", "type": "App web · React + Node.js", "desc": "Plateforme de réservation en ligne pour une chaîne de restaurants avec panneau d'administration en temps réel.", "tag": "Web App" },
+      { "name": "E-commerce mobile", "type": "App mobile · React Native", "desc": "Boutique en ligne multiplateforme avec passerelle de paiement intégrée et gestion des commandes.", "tag": "Mobile" },
+      { "name": "Dashboard analytique", "type": "App web · Next.js", "desc": "Tableau de bord avec graphiques en temps réel, export de rapports et gestion des utilisateurs.", "tag": "Dashboard" }
+    ]
+  },
+  "contact": {
+    "tag": "04 CONTACT",
+    "title": "Parlons-en",
+    "sub": "Parlez-moi de votre projet. Je réponds en moins de 24 heures avec une évaluation initiale sans engagement.",
+    "email_label": "EMAIL",
+    "location_label": "LOCALISATION",
+    "location_val": "Valence, Espagne · travail à distance",
+    "response_label": "DÉLAI DE RÉPONSE",
+    "response_val": "moins de 24 heures",
+    "chat_label": "CHAT DIRECT",
+    "form": {
+      "name": "NOM",
+      "name_ph": "Votre nom",
+      "email_ph": "vous@email.com",
+      "project": "PROJET",
+      "project_ph": "Parlez-moi de votre besoin...",
+      "accept_privacy": "J'ai lu et j'accepte la politique de confidentialité et les conditions d'utilisation",
+      "accept_comms": "J'accepte de recevoir des communications commerciales (optionnel)",
+      "send": "Envoyer →",
+      "sending": "Envoi en cours...",
+      "service_label": "Quel type de projet vous faut-il ?",
+      "service_webapp": "Logiciel / Web App",
+      "service_webapp_desc": "App complète avec panneau admin, base de données et API",
+      "service_native": "App Native",
+      "service_native_desc": "App iOS + Android avec React Native",
+      "service_automation": "Automatisation n8n",
+      "service_automation_desc": "Flux automatisés entre vos outils",
+      "service_landing": "Landing Page",
+      "service_landing_desc": "Page de conversion rapide et optimisée · à partir de 500 €"
+    },
+    "form_errors": {
+      "name_min": "Le nom doit comporter au moins 2 caractères",
+      "name_max": "Le nom est trop long",
+      "email_invalid": "Veuillez entrer un email valide",
+      "project_min": "Dites-m'en un peu plus (minimum 10 caractères)",
+      "project_max": "Le message est trop long",
+      "accept_required": "Vous devez accepter la politique de confidentialité pour continuer",
+    "server_error": "Une erreur s'est produite, veuillez réessayer",
+      "success": "Message envoyé ! Je vous réponds sous 24h"
+    }
+  },
+  "footer": {
+    "slogan": "Des apps qui transforment les entreprises",
+    "location": "Depuis Valence, Espagne",
+    "copy": "© 2025 AV Digital Solutions",
+    "privacy": "Politique de confidentialité",
+    "cookies": "Politique de cookies",
+    "terms": "Conditions d'utilisation"
+  },
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "intro": "Chez AV Digital Solutions, nous nous engageons à protéger votre vie privée. Cette politique explique comment nous collectons, utilisons et protégeons vos données personnelles.",
+    "s1_title": "Données collectées",
+    "s1_body": "Nous collectons uniquement les données que vous nous fournissez volontairement via le formulaire de contact : nom, email et description de votre projet. Nous ne collectons pas de données de navigation.",
+    "s2_title": "Utilisation des données",
+    "s2_body": "Vos données sont utilisées uniquement pour vous répondre et gérer la relation commerciale. Nous ne les partageons pas avec des tiers.",
+    "s3_title": "Vos droits",
+    "s3_body": "Vous pouvez demander l'accès, la rectification ou la suppression de vos données à tout moment en écrivant à hola@avdigital.es.",
+    "s4_title": "Responsable",
+    "s4_body": "Álvaro Valle · hola@avdigital.es · Valence, Espagne"
+  },
+  "cookies": {
+    "title": "Politique de cookies",
+    "intro": "Ce site utilise uniquement des cookies techniques strictement nécessaires. Nous n'utilisons pas de cookies d'analyse, de publicité ou de suivi tiers.",
+    "s1_title": "Cookies techniques",
+    "s1_body": "Nous utilisons un cookie local (localStorage) pour mémoriser votre préférence de thème clair/sombre. Cette information n'est pas envoyée à un serveur.",
+    "s2_title": "Comment les désactiver",
+    "s2_body": "Vous pouvez supprimer les cookies depuis les paramètres de votre navigateur.",
+    "s3_title": "Contact",
+    "s3_body": "Pour toute question sur les cookies, écrivez-nous à hola@avdigital.es."
+  },
+  "terms": {
+    "title": "Conditions d'utilisation",
+    "intro": "En accédant à ce site, vous acceptez les conditions suivantes.",
+    "s1_title": "Objet",
+    "s1_body": "Ce site est le site professionnel d'AV Digital Solutions, développeur freelance web et mobile basé à Valence, Espagne.",
+    "s2_title": "Propriété intellectuelle",
+    "s2_body": "Tout le contenu de ce site (textes, designs, code) est la propriété d'AV Digital Solutions. Toute reproduction sans autorisation est interdite.",
+    "s3_title": "Limitation de responsabilité",
+    "s3_body": "AV Digital Solutions n'est pas responsable des dommages résultant de l'utilisation de ce site.",
+    "s4_title": "Droit applicable",
+    "s4_body": "Ces conditions sont régies par le droit espagnol. Tout litige sera soumis aux tribunaux de Valence."
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "nav": {
+    "services": "Services",
+    "process": "Process",
+    "pricing": "Pricing",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tag": "Freelance · Valencia · React · Next.js · Node.js",
+    "h1_1": "Your app.",
+    "h1_2": "Designed",
+    "h1_3": "and built.",
+    "sub": "I build custom web and mobile applications for businesses that want to go digital without agency prices. UI design included.",
+    "cta1": "Tell me about your project",
+    "cta2": "See services"
+  },
+  "stats": {
+    "weeks_val": "4–6",
+    "weeks_label": "weeks · average project",
+    "price_val": "from 2.5k",
+    "price_label": "€ · functional apps",
+    "contact_val": "1",
+    "contact_label": "point of contact · direct"
+  },
+  "services": {
+    "tag": "01 SERVICES",
+    "title": "What I build",
+    "sub": "I cover the full cycle: design, development and launch. No need to coordinate multiple providers.",
+    "items": [
+      {
+        "num": "01",
+        "name": "Landing Page",
+        "desc": "Professional online presence that turns visitors into clients.",
+        "price": "from €500",
+        "features": ["Custom responsive UI design", "Technical SEO (meta tags, schema, sitemap)", "Sections: hero, services, testimonials, FAQ, contact", "Ultra-fast load · Core Web Vitals", "Functional contact form", "Delivered in 1–2 weeks"]
+      },
+      {
+        "num": "02",
+        "name": "Professional Website",
+        "desc": "Full website with an admin panel so you can edit content without a developer.",
+        "price": "from €1,500",
+        "features": ["Everything in Landing Page", "Admin panel included", "Blog or news section", "Advanced SEO with optimised URLs", "Google Analytics & CRM integration", "Delivered in 3–4 weeks"]
+      },
+      {
+        "num": "03",
+        "name": "Custom Web / Software",
+        "desc": "E-commerce, management software or any complex web application.",
+        "price": "from €2,500",
+        "features": ["E-commerce with payment gateway (Stripe, PayPal)", "Internal software: ERP, CRM, bookings, order management", "User authentication and roles", "Database and REST API", "Third-party integrations", "Scalable and maintainable long-term"]
+      },
+      {
+        "num": "04",
+        "name": "Maintenance",
+        "desc": "Ongoing support to keep your website updated and secure.",
+        "price": "from €150/month",
+        "features": ["Security updates", "Bug fixes", "Content changes and minor improvements", "Email support within 24h", "Monthly performance report"]
+      }
+    ]
+  },
+  "process": {
+    "tag": "02 PROCESS",
+    "title": "How we work",
+    "sub": "No surprises. Each phase has clear deliverables and requires your approval before moving on.",
+    "steps": [
+      { "num": "01 —", "title": "Discovery", "desc": "Meeting to understand your business, users and goals. We define scope and deliver a fixed quote.", "time": "1–2 weeks" },
+      { "num": "02 —", "title": "UI/UX Design", "desc": "Wireframes and navigable prototype. You approve the design before development starts.", "time": "2–4 weeks" },
+      { "num": "03 —", "title": "Sprint development", "desc": "Fortnightly iterations with demos. See real progress and give feedback at each delivery.", "time": "6–16 weeks" },
+      { "num": "04 —", "title": "Delivery & launch", "desc": "Deployment to production, documentation and training. The source code is yours from day one.", "time": "1–2 weeks" }
+    ]
+  },
+  "pricing": {
+    "tag": "03 PRICING",
+    "title": "Full transparency",
+    "sub": "No fine print. Prices are indicative — each project gets a fixed budget.",
+    "popular": "POPULAR",
+    "from": "from",
+    "plans": [
+      { "tier": "LANDING PAGE", "price": "500", "unit": "€", "desc": "Online presence that turns visitors into clients", "featured": false, "features": ["Custom UI design", "Full technical SEO", "Responsive and ultra-fast", "Contact form", "Delivered in 1–2 weeks"] },
+      { "tier": "PROFESSIONAL", "price": "1,500", "unit": "€", "desc": "Full website with admin panel included", "featured": true, "features": ["Everything in Landing Page", "Admin panel · edit without code", "Blog or news section", "Advanced SEO", "Analytics + CRM"] },
+      { "tier": "CUSTOM", "price": "2,500", "unit": "€", "desc": "E-commerce, software or complex web application", "featured": false, "features": ["Everything in Professional", "E-commerce · Stripe / PayPal", "Management software (ERP, CRM...)", "REST API + database", "External integrations"] },
+      { "tier": "MAINTENANCE", "price": "150", "unit": "€/month", "desc": "Your website always updated, secure and running", "featured": false, "features": ["Security updates", "Bug fixes", "Content changes", "Email support 24h", "Monthly report"] }
+    ]
+  },
+  "portfolio": {
+    "tag": "05 PORTFOLIO",
+    "title": "Recent projects",
+    "sub": "A selection of the latest delivered projects.",
+    "items": [
+      { "name": "Booking app", "type": "Web app · React + Node.js", "desc": "Online booking platform for a restaurant chain with real-time admin panel.", "tag": "Web App" },
+      { "name": "Mobile e-commerce", "type": "Mobile app · React Native", "desc": "Cross-platform online store with integrated payment gateway and order management.", "tag": "Mobile" },
+      { "name": "Analytics dashboard", "type": "Web app · Next.js", "desc": "Real-time control panel with charts, report export and user management.", "tag": "Dashboard" }
+    ]
+  },
+  "contact": {
+    "tag": "04 CONTACT",
+    "title": "Let's talk",
+    "sub": "Tell me about your project. I reply within 24 hours with an initial assessment, no strings attached.",
+    "email_label": "EMAIL",
+    "location_label": "LOCATION",
+    "location_val": "Valencia, Spain · remote work",
+    "response_label": "RESPONSE TIME",
+    "response_val": "under 24 hours",
+    "chat_label": "DIRECT CHAT",
+    "form": {
+      "name": "NAME",
+      "name_ph": "Your name",
+      "email_ph": "you@email.com",
+      "project": "PROJECT",
+      "project_ph": "Tell me what you need...",
+      "accept_privacy": "I have read and accept the privacy policy and terms of use",
+      "accept_comms": "I agree to receive commercial communications (optional)",
+      "send": "Send message →",
+      "sending": "Sending...",
+      "service_label": "What type of project do you need?",
+      "service_webapp": "Software / Web App",
+      "service_webapp_desc": "Full app with admin panel, database and API",
+      "service_native": "Native App",
+      "service_native_desc": "iOS + Android app with React Native",
+      "service_automation": "n8n Automation",
+      "service_automation_desc": "Automated workflows between your tools",
+      "service_landing": "Landing Page",
+      "service_landing_desc": "Fast, optimised conversion page · from €500"
+    },
+    "form_errors": {
+      "name_min": "Name must be at least 2 characters",
+      "name_max": "Name is too long",
+      "email_invalid": "Please enter a valid email",
+      "project_min": "Tell me a bit more (at least 10 characters)",
+      "project_max": "Message is too long",
+      "accept_required": "You must accept the privacy policy to continue",
+    "server_error": "Something went wrong, please try again",
+      "success": "Message sent! I'll reply within 24 hours"
+    }
+  },
+  "footer": {
+    "slogan": "Apps that transform businesses",
+    "location": "From Valencia, Spain",
+    "copy": "© 2025 AV Digital Solutions",
+    "privacy": "Privacy policy",
+    "cookies": "Cookie policy",
+    "terms": "Terms of use"
+  },
+  "privacy": {
+    "title": "Privacy policy",
+    "intro": "At AV Digital Solutions, we are committed to protecting your privacy. This policy explains how we collect, use and protect your personal information.",
+    "s1_title": "Data we collect",
+    "s1_body": "We only collect data you voluntarily provide through the contact form: your name, email and project description. We do not collect browsing data or use tracking cookies.",
+    "s2_title": "How we use your data",
+    "s2_body": "Your data is used solely to reply to you and manage the business relationship. We do not share it with third parties or use it for advertising.",
+    "s3_title": "Your rights",
+    "s3_body": "You can request access, correction or deletion of your data at any time by writing to hola@avdigital.es.",
+    "s4_title": "Data controller",
+    "s4_body": "Álvaro Valle · hola@avdigital.es · Valencia, Spain"
+  },
+  "cookies": {
+    "title": "Cookie policy",
+    "intro": "This website uses only strictly necessary technical cookies. We do not use analytics, advertising or third-party tracking cookies.",
+    "s1_title": "Technical cookies",
+    "s1_body": "We use a local cookie (localStorage) to remember your light/dark theme preference. This information is not sent to any server.",
+    "s2_title": "How to disable them",
+    "s2_body": "You can clear cookies from your browser settings. Please note that some basic website features may be affected.",
+    "s3_title": "Contact",
+    "s3_body": "For any questions about cookies, write to us at hola@avdigital.es."
+  },
+  "terms": {
+    "title": "Terms of use",
+    "intro": "By accessing this website you agree to the following terms. If you disagree, please do not use it.",
+    "s1_title": "Purpose",
+    "s1_body": "This website is the professional site of AV Digital Solutions, a freelance web and mobile developer based in Valencia, Spain.",
+    "s2_title": "Intellectual property",
+    "s2_body": "All content on this website (text, designs, code) is the property of AV Digital Solutions. Reproduction without express authorisation is prohibited.",
+    "s3_title": "Limitation of liability",
+    "s3_body": "AV Digital Solutions is not liable for any damages arising from the use of this website or the information contained herein.",
+    "s4_title": "Applicable law",
+    "s4_body": "These terms are governed by Spanish law. Any disputes shall be submitted to the courts of Valencia."
+  }
+}
