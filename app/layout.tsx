@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Syne, Space_Mono } from 'next/font/google'
 import { ThemeProvider } from '@/components/ThemeProvider'
+import { headers } from 'next/headers'
 import './globals.css'
 
 const syne = Syne({
@@ -23,13 +24,17 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  const headersList = await headers()
+  const lang = headersList.get('x-lang') ?? 'es'
+
   return (
     <html
+      lang={lang}
       suppressHydrationWarning
       className={`${syne.variable} ${spaceMono.variable}`}
     >
