@@ -18,6 +18,9 @@ const spaceMono = Space_Mono({
 export const metadata: Metadata = {
   title: 'AV Digital Solutions',
   description: 'Custom web and mobile app development',
+  alternates: {
+    canonical: 'https://www.alvarovalle.com',
+  },
 }
 
 export default function RootLayout({
