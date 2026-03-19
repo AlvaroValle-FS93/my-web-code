@@ -7,7 +7,8 @@ export const contactSchema = z.object({
   name: z
     .string()
     .min(2, { message: 'name_min' })
-    .max(100, { message: 'name_max' }),
+    .max(100, { message: 'name_max' })
+    .regex(/^[\p{L}\p{M}\s'-]+$/u, { message: 'name_invalid' }),
   email: z
     .string()
     .email({ message: 'email_invalid' }),

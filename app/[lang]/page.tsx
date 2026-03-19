@@ -7,8 +7,10 @@ import Services from '@/components/Services'
 import Process from '@/components/Process'
 import Pricing from '@/components/Pricing'
 import Portfolio from '@/components/Portfolio'
-import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
+import dynamic from 'next/dynamic'
+
+const Contact = dynamic(() => import('@/components/Contact'))
 
 const BASE = 'https://www.alvarovalle.com'
 

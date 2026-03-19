@@ -125,6 +125,7 @@
     },
     "form_errors": {
       "name_min": "Il nome deve avere almeno 2 caratteri",
+      "name_invalid": "Il nome può contenere solo lettere e accenti",
       "name_max": "Il nome è troppo lungo",
       "email_invalid": "Inserisci un'email valida",
       "project_min": "Raccontami di più (minimo 10 caratteri)",
