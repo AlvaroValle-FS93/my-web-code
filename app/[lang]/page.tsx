@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation'
+import type { Metadata } from 'next'
 import { getDictionary, hasLocale, type Locale } from './dictionaries'
 import Nav from '@/components/Nav'
 import Hero from '@/components/Hero'
@@ -8,6 +9,31 @@ import Pricing from '@/components/Pricing'
 import Portfolio from '@/components/Portfolio'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
+
+const BASE = 'https://www.alvarovalle.com'
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>
+}): Promise<Metadata> {
+  const { lang } = await params
+  const dict = await getDictionary(lang as Locale)
+  return {
+    alternates: {
+      canonical: `${BASE}/${lang}`,
+      languages: {
+        'es': `${BASE}/es`,
+        'en': `${BASE}/en`,
+        'fr': `${BASE}/fr`,
+        'it': `${BASE}/it`,
+        'x-default': `${BASE}/es`,
+      },
+    },
+    title: 'AV Digital Solutions · Alvaro Valle',
+    description: dict.hero.sub,
+  }
+}
 
 export default async function Page({
   params,
@@ -22,7 +48,7 @@ export default async function Page({
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'AV Digital Solutions',
-    url: `https://avdigital.es/${lang}`,
+    url: `${BASE}/${lang}`,
     description: dict.hero.sub,
     email: 'alvaro.valle.fullstack@outlook.com',
     telephone: '+34 600 000 000',
