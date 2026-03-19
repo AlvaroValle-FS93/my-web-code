@@ -16,7 +16,7 @@ export const contactSchema = z.object({
     .min(10, { message: 'project_min' })
     .max(2000, { message: 'project_max' }),
   service: z.enum(SERVICE_IDS).optional(),
-  acceptPrivacy: z.literal(true, { errorMap: () => ({ message: 'accept_required' }) }),
+  acceptPrivacy: z.literal(true, { error: () => ({ message: 'accept_required' }) }),
   acceptComms: z.boolean().optional(),
 })
 
