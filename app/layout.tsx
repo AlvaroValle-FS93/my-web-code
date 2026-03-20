@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Syne, Space_Mono } from 'next/font/google'
 import { ThemeProvider } from '@/components/ThemeProvider'
 import { headers } from 'next/headers'
+import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 const syne = Syne({
@@ -40,6 +41,7 @@ export default async function RootLayout({
     >
       <body suppressHydrationWarning>
         <ThemeProvider>{children}</ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
