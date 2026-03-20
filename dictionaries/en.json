@@ -110,6 +110,8 @@
       "project": "PROJECT",
       "project_ph": "Tell me what you need...",
       "accept_privacy": "I have read and accept the privacy policy and terms of use",
+      "accept_privacy_link1": "privacy policy",
+      "accept_privacy_link2": "terms of use",
       "accept_comms": "I agree to receive commercial communications (optional)",
       "send": "Send message →",
       "sending": "Sending...",

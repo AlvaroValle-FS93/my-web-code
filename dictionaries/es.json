@@ -110,6 +110,8 @@
       "project": "PROYECTO",
       "project_ph": "Cuéntame qué necesitas...",
       "accept_privacy": "He leído y acepto la política de privacidad y los términos de uso",
+      "accept_privacy_link1": "política de privacidad",
+      "accept_privacy_link2": "términos de uso",
       "accept_comms": "Acepto recibir comunicaciones comerciales (opcional)",
       "send": "Enviar mensaje →",
       "sending": "Enviando...",

@@ -95,7 +95,7 @@ export default async function Page({
         <Process dict={dict.process} />
         <Pricing dict={dict.pricing} />
         <Portfolio dict={dict.portfolio} />
-        <Contact dict={dict.contact} />
+        <Contact dict={dict.contact} lang={lang} />
       </main>
       <Footer dict={dict.footer} nav={dict.nav} lang={lang} />
     </div>

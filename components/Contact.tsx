@@ -20,6 +20,8 @@ interface ContactDict {
     project: string
     project_ph: string
     accept_privacy: string
+    accept_privacy_link1: string
+    accept_privacy_link2: string
     accept_comms: string
     send: string
     sending: string
@@ -72,7 +74,7 @@ function ServiceIcon({ id }: { id: ServiceId }) {
   )
 }
 
-export default function Contact({ dict }: { dict: ContactDict }) {
+export default function Contact({ dict, lang }: { dict: ContactDict; lang: string }) {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [project, setProject] = useState('')
@@ -381,7 +383,22 @@ export default function Contact({ dict }: { dict: ContactDict }) {
                   className="mt-0.5 w-4 h-4 flex-shrink-0 accent-accent cursor-pointer"
                 />
                 <span className="font-mono text-[11px] text-text-2 leading-relaxed group-hover:text-text transition-colors">
-                  {dict.form.accept_privacy}
+                  {(() => {
+                    const text = dict.form.accept_privacy
+                    const l1 = dict.form.accept_privacy_link1
+                    const l2 = dict.form.accept_privacy_link2
+                    const [pre, rest] = text.split(l1)
+                    const [mid, post] = (rest ?? '').split(l2)
+                    return (
+                      <>
+                        {pre}
+                        <a href={`/${lang}/privacy`} target="_blank" className="underline hover:text-accent transition-colors">{l1}</a>
+                        {mid}
+                        <a href={`/${lang}/terms`} target="_blank" className="underline hover:text-accent transition-colors">{l2}</a>
+                        {post}
+                      </>
+                    )
+                  })()}
                 </span>
               </label>
               {errors.acceptPrivacy && (
