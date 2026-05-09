@@ -35,6 +35,7 @@ export default function Portfolio({ dict }: { dict: PortfolioDict }) {
           >
             <div
               className={`h-44 bg-gradient-to-br ${GRADIENTS[i % GRADIENTS.length]} flex flex-col items-center justify-center border-b border-border-dim gap-2 relative`}
+              style={i === dict.items.length - 1 ? { backgroundImage: 'url(/rollStats1.svg)', backgroundSize: 'cover', backgroundPosition: 'center' } : undefined}
             >
               <span className="font-mono text-[11px] text-accent tracking-widest">
                 {item.tag.toUpperCase()}
