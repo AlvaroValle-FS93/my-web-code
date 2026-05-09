@@ -37,11 +37,8 @@ export default function Portfolio({ dict }: { dict: PortfolioDict }) {
               className={`h-44 bg-gradient-to-br ${GRADIENTS[i % GRADIENTS.length]} flex flex-col items-center justify-center border-b border-border-dim gap-2 relative`}
               style={i === dict.items.length - 1 ? { backgroundImage: 'url(/rollStats1.svg)', backgroundSize: 'cover', backgroundPosition: 'center' } : undefined}
             >
-              <span className="font-mono text-[11px] text-accent tracking-widest">
-                {item.tag.toUpperCase()}
-              </span>
               {item.badge && (
-                <span className={`${item.badgeStyle === 'progress' ? 'btn-progress' : 'btn-whatsapp'} font-mono text-[10px] tracking-widest rounded-sm px-2 py-1`}>
+                <span className={`${item.badgeStyle === 'progress' ? 'btn-progress' : 'btn-whatsapp'} absolute top-3 right-3 font-mono text-[10px] tracking-widest rounded-sm px-2 py-1`}>
                   {item.badge.toUpperCase()}
                 </span>
               )}
