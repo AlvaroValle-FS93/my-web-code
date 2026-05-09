@@ -13,9 +13,7 @@ interface FooterDict {
 }
 
 interface NavDict {
-  services: string
   process: string
-  pricing: string
   portfolio: string
   contact: string
 }
@@ -28,9 +26,7 @@ const localeMap: Record<string, string> = {
 }
 
 const navLinks = [
-  { label_key: 'services', href: '#services' },
   { label_key: 'process', href: '#process' },
-  { label_key: 'pricing', href: '#pricing' },
   { label_key: 'portfolio', href: '#portfolio' },
   { label_key: 'contact', href: '#contact' },
 ]

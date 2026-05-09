@@ -9,9 +9,7 @@ const LANGS = ['es', 'en', 'fr', 'it'] as const
 type LangCode = (typeof LANGS)[number]
 
 interface NavDict {
-  services: string
   process: string
-  pricing: string
   portfolio: string
   contact: string
 }
@@ -34,7 +32,7 @@ export default function Nav({ dict, lang }: { dict: NavDict; lang: string }) {
     setOpen(false)
   }
 
-  const navItems = ['services', 'process', 'pricing', 'portfolio', 'contact'] as const
+  const navItems = ['process', 'portfolio', 'contact'] as const
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border-dim backdrop-blur-xl bg-bg/90">
