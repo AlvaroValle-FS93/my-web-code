@@ -29,13 +29,6 @@
     "sub": "Copro l'intero ciclo: design, sviluppo e lancio. Senza coordinare diversi fornitori.",
     "items": [
       {
-        "num": "01",
-        "name": "Landing Page",
-        "desc": "Presenza online professionale che converte le visite in clienti.",
-        "price": "da 500 €",
-        "features": ["Design UI personalizzato e responsive", "SEO tecnico completo (meta tag, schema, sitemap)", "Sezioni: hero, servizi, testimonianze, FAQ, contatto", "Caricamento ultra-rapido · Core Web Vitals", "Modulo di contatto funzionale", "Consegna in 1–2 settimane"]
-      },
-      {
         "num": "02",
         "name": "Sito Professionale",
         "desc": "Sito completo con pannello di amministrazione per modificare i contenuti senza sviluppatore.",
@@ -78,8 +71,7 @@
     "plans": [
       { "tier": "LANDING PAGE", "price": "500", "unit": "€", "desc": "Presenza online che converte le visite in clienti", "featured": false, "features": ["Design UI personalizzato", "SEO tecnico completo", "Responsive e ultra-rapido", "Modulo di contatto", "Consegna in 1–2 settimane"] },
       { "tier": "PROFESSIONALE", "price": "1.500", "unit": "€", "desc": "Sito completo con pannello di amministrazione incluso", "featured": true, "features": ["Tutto della Landing Page", "Pannello admin · modifica senza codice", "Blog o notizie", "SEO avanzato", "Analytics + CRM"] },
-      { "tier": "SU MISURA", "price": "2.500", "unit": "€", "desc": "E-commerce, software o applicazione web complessa", "featured": false, "features": ["Tutto del Professionale", "E-commerce · Stripe / PayPal", "Software gestionale (ERP, CRM...)", "API REST + database", "Integrazioni esterne"] },
-      { "tier": "MANUTENZIONE", "price": "150", "unit": "€/mese", "desc": "Il tuo sito sempre aggiornato, sicuro e funzionante", "featured": false, "features": ["Aggiornamenti di sicurezza", "Correzione bug", "Modifiche ai contenuti", "Supporto email 24h", "Report mensile"] }
+{ "tier": "MANUTENZIONE", "price": "150", "unit": "€/mese", "desc": "Il tuo sito sempre aggiornato, sicuro e funzionante", "featured": false, "features": ["Aggiornamenti di sicurezza", "Correzione bug", "Modifiche ai contenuti", "Supporto email 24h", "Report mensile"] }
     ]
   },
   "portfolio": {

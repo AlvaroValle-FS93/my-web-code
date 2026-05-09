@@ -29,13 +29,6 @@
     "sub": "I cover the full cycle: design, development and launch. No need to coordinate multiple providers.",
     "items": [
       {
-        "num": "01",
-        "name": "Landing Page",
-        "desc": "Professional online presence that turns visitors into clients.",
-        "price": "from €500",
-        "features": ["Custom responsive UI design", "Technical SEO (meta tags, schema, sitemap)", "Sections: hero, services, testimonials, FAQ, contact", "Ultra-fast load · Core Web Vitals", "Functional contact form", "Delivered in 1–2 weeks"]
-      },
-      {
         "num": "02",
         "name": "Professional Website",
         "desc": "Full website with an admin panel so you can edit content without a developer.",
@@ -78,8 +71,7 @@
     "plans": [
       { "tier": "LANDING PAGE", "price": "500", "unit": "€", "desc": "Online presence that turns visitors into clients", "featured": false, "features": ["Custom UI design", "Full technical SEO", "Responsive and ultra-fast", "Contact form", "Delivered in 1–2 weeks"] },
       { "tier": "PROFESSIONAL", "price": "1,500", "unit": "€", "desc": "Full website with admin panel included", "featured": true, "features": ["Everything in Landing Page", "Admin panel · edit without code", "Blog or news section", "Advanced SEO", "Analytics + CRM"] },
-      { "tier": "CUSTOM", "price": "2,500", "unit": "€", "desc": "E-commerce, software or complex web application", "featured": false, "features": ["Everything in Professional", "E-commerce · Stripe / PayPal", "Management software (ERP, CRM...)", "REST API + database", "External integrations"] },
-      { "tier": "MAINTENANCE", "price": "150", "unit": "€/month", "desc": "Your website always updated, secure and running", "featured": false, "features": ["Security updates", "Bug fixes", "Content changes", "Email support 24h", "Monthly report"] }
+{ "tier": "MAINTENANCE", "price": "150", "unit": "€/month", "desc": "Your website always updated, secure and running", "featured": false, "features": ["Security updates", "Bug fixes", "Content changes", "Email support 24h", "Monthly report"] }
     ]
   },
   "portfolio": {

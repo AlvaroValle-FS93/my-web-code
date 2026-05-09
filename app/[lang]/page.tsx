@@ -3,9 +3,7 @@ import type { Metadata } from 'next'
 import { getDictionary, hasLocale, type Locale } from './dictionaries'
 import Nav from '@/components/Nav'
 import Hero from '@/components/Hero'
-import Services from '@/components/Services'
 import Process from '@/components/Process'
-import Pricing from '@/components/Pricing'
 import Portfolio from '@/components/Portfolio'
 import Footer from '@/components/Footer'
 import dynamic from 'next/dynamic'
@@ -62,21 +60,6 @@ export default async function Page({
     },
     areaServed: ['ES', 'FR', 'IT', 'EU'],
     knowsLanguage: ['es', 'en', 'fr', 'it'],
-    hasOfferCatalog: {
-      '@type': 'OfferCatalog',
-      name: dict.services.title,
-      itemListElement: dict.services.items.map(
-        (item: { name: string; desc: string }, i: number) => ({
-          '@type': 'Offer',
-          position: i + 1,
-          itemOffered: {
-            '@type': 'Service',
-            name: item.name,
-            description: item.desc,
-          },
-        })
-      ),
-    },
   }
 
   return (
@@ -91,9 +74,7 @@ export default async function Page({
       <Nav dict={dict.nav} lang={lang} />
       <main>
         <Hero dict={dict} />
-        <Services dict={dict.services} />
         <Process dict={dict.process} />
-        <Pricing dict={dict.pricing} />
         <Portfolio dict={dict.portfolio} />
         <Contact dict={dict.contact} lang={lang} />
       </main>

@@ -29,13 +29,6 @@
     "sub": "Je couvre tout le cycle : design, développement et lancement. Sans coordonner plusieurs prestataires.",
     "items": [
       {
-        "num": "01",
-        "name": "Landing Page",
-        "desc": "Présence en ligne professionnelle qui convertit les visiteurs en clients.",
-        "price": "à partir de 500 €",
-        "features": ["Design UI personnalisé et responsive", "SEO technique complet (balises, schema, sitemap)", "Sections : hero, services, témoignages, FAQ, contact", "Chargement ultra-rapide · Core Web Vitals", "Formulaire de contact fonctionnel", "Livraison en 1–2 semaines"]
-      },
-      {
         "num": "02",
         "name": "Site Professionnel",
         "desc": "Site complet avec panneau d'administration pour modifier le contenu sans développeur.",
@@ -78,8 +71,7 @@
     "plans": [
       { "tier": "LANDING PAGE", "price": "500", "unit": "€", "desc": "Présence en ligne qui convertit les visiteurs en clients", "featured": false, "features": ["Design UI personnalisé", "SEO technique complet", "Responsive et ultra-rapide", "Formulaire de contact", "Livraison en 1–2 semaines"] },
       { "tier": "PROFESSIONNEL", "price": "1 500", "unit": "€", "desc": "Site complet avec panneau d'administration inclus", "featured": true, "features": ["Tout de la Landing Page", "Panneau admin · modifier sans code", "Blog ou actualités", "SEO avancé", "Analytics + CRM"] },
-      { "tier": "SUR MESURE", "price": "2 500", "unit": "€", "desc": "E-commerce, logiciel ou application web complexe", "featured": false, "features": ["Tout du Professionnel", "E-commerce · Stripe / PayPal", "Logiciel de gestion (ERP, CRM...)", "API REST + base de données", "Intégrations externes"] },
-      { "tier": "MAINTENANCE", "price": "150", "unit": "€/mois", "desc": "Votre site toujours à jour, sécurisé et opérationnel", "featured": false, "features": ["Mises à jour de sécurité", "Correction de bugs", "Modifications de contenu", "Support email 24h", "Rapport mensuel"] }
+{ "tier": "MAINTENANCE", "price": "150", "unit": "€/mois", "desc": "Votre site toujours à jour, sécurisé et opérationnel", "featured": false, "features": ["Mises à jour de sécurité", "Correction de bugs", "Modifications de contenu", "Support email 24h", "Rapport mensuel"] }
     ]
   },
   "portfolio": {

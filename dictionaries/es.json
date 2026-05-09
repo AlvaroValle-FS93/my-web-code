@@ -29,13 +29,6 @@
     "sub": "Cubro todo el ciclo: diseño, desarrollo y lanzamiento. Sin coordinar proveedores distintos.",
     "items": [
       {
-        "num": "01",
-        "name": "Landing Page",
-        "desc": "Presencia online profesional que convierte visitas en clientes.",
-        "price": "desde 500 €",
-        "features": ["Diseño UI personalizado y responsive", "SEO técnico optimizado (meta tags, schema, sitemap)", "Secciones: hero, servicios, testimonios, FAQ y contacto", "Carga ultrarrápida · Core Web Vitals", "Formulario de contacto funcional", "Entrega en 1–2 semanas"]
-      },
-      {
         "num": "02",
         "name": "Web Profesional",
         "desc": "Web completa con panel para que edites tus contenidos sin tocar código.",
@@ -78,8 +71,7 @@
     "plans": [
       { "tier": "LANDING PAGE", "price": "500", "unit": "€", "desc": "Presencia online que convierte visitas en clientes", "featured": false, "features": ["Diseño UI personalizado", "SEO técnico completo", "Responsive y ultrarrápida", "Formulario de contacto", "Entrega en 1–2 semanas"] },
       { "tier": "WEB PROFESIONAL", "price": "1.500", "unit": "€", "desc": "Web completa con panel de administración incluido", "featured": true, "features": ["Todo lo de Landing Page", "Panel admin · edita sin código", "Blog o noticias", "SEO avanzado", "Analytics + CRM"] },
-      { "tier": "A MEDIDA", "price": "2.500", "unit": "€", "desc": "E-commerce, software o aplicación web compleja", "featured": false, "features": ["Todo lo de Web Profesional", "E-commerce · Stripe / PayPal", "Software de gestión (ERP, CRM...)", "API REST + base de datos", "Integraciones externas"] },
-      { "tier": "MANTENIMIENTO", "price": "150", "unit": "€/mes", "desc": "Tu web siempre actualizada, segura y funcionando", "featured": false, "features": ["Actualizaciones de seguridad", "Corrección de bugs", "Cambios de contenido", "Soporte email 24h", "Informe mensual"] }
+{ "tier": "MANTENIMIENTO", "price": "150", "unit": "€/mes", "desc": "Tu web siempre actualizada, segura y funcionando", "featured": false, "features": ["Actualizaciones de seguridad", "Corrección de bugs", "Cambios de contenido", "Soporte email 24h", "Informe mensual"] }
     ]
   },
   "portfolio": {
