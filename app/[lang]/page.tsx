@@ -53,7 +53,7 @@ export default async function Page({
     url: `${BASE}/${lang}`,
     description: dict.hero.sub,
     email: 'alvaro.valle.fullstack@outlook.com',
-    // telephone: '+34 600 000 000',
+    telephone: '+34 600 000 000',
     priceRange: '€€',
     address: {
       '@type': 'PostalAddress',
